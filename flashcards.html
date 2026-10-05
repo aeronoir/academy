@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Part 107 Flashcards &amp; Practice Questions — Aero Noir Academy</title>
+<meta name="description" content="Free FAA Part 107 flashcards, quizzes, and a timed mini mock exam with explanations. Study on any device. From Aero Noir Academy.">
+<meta name="theme-color" content="#0b1420">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 70'%3E%3Cpath d='M50 14 L18 4 L26 16 L18 22 L34 24 L22 34 L40 30 L50 40 L60 30 L78 34 L66 24 L82 22 L74 16 L82 4 Z' fill='%23c9a24a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brandmark" href="index.html" aria-label="Aero Noir Academy home">
+      <svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 14 L18 4 L26 16 L18 22 L34 24 L22 34 L40 30 L50 40 L60 30 L78 34 L66 24 L82 22 L74 16 L82 4 Z" fill="#c9a24a"/><circle cx="50" cy="20" r="4.5" fill="#0b1420" stroke="#c9a24a" stroke-width="1.4"/></svg>
+      <span>Aero Noir <em>Academy</em></span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html#programs">Programs</a>
+      <a class="btn sm" href="index.html#signup">Get the free guide</a>
+    </div>
+  </div>
+</nav>
+
+<main class="study">
+  <p class="eyebrow">Free Part 107 study tool</p>
+  <h1 class="title" style="text-align:left;margin-bottom:6px">Flashcards, quizzes &amp; mock exam</h1>
+  <p class="lede" style="margin:0 0 22px">Original practice questions with explanations and FAA references. Cards you miss come back sooner.</p>
+
+  <div class="bank-note" id="draftnote" hidden>Beta: this question bank is a draft pending final instructor review. Always confirm against the current FAA Remote Pilot Study Guide.</div>
+
+  <div class="bar">
+    <div class="seg" id="modes" role="group" aria-label="Study mode">
+      <button type="button" class="on" data-mode="flash">Flashcards</button>
+      <button type="button" data-mode="quiz">Quiz (10)</button>
+      <button type="button" data-mode="mock">Mock exam (20)</button>
+    </div>
+    <select id="topic" aria-label="Topic"></select>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div class="progress" id="progress"><i></i></div>
+  <div id="stage" aria-live="polite"></div>
+
+  <div class="actions" style="margin-top:26px">
+    <button type="button" class="btn ghost sm" id="reset">Reset my progress</button>
+  </div>
+
+  <div class="signup" style="margin-top:46px">
+    <h3>Want the full question bank?</h3>
+    <p class="lede">Get the free pre-flight guide now and be first to know when Part 107 Prep opens.</p>
+    <form class="ana-signup" novalidate>
+      <div class="row">
+        <div><label class="f" for="fn3">First name</label><input type="text" id="fn3" name="FNAME" autocomplete="given-name"></div>
+        <div><label class="f" for="em3">Email</label><input type="email" id="em3" name="EMAIL" autocomplete="email" required></div>
+      </div>
+      <input class="hp" type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="SOURCE" value="">
+      <label class="chk" style="display:none"><input type="checkbox" name="interest" value="part107-prep" checked></label>
+      <button class="btn" type="submit">Notify me</button>
+      <p class="msg" hidden role="status"></p>
+      <p class="fine">Unsubscribe anytime. <a href="legal.html#privacy">Privacy policy</a>.</p>
+    </form>
+  </div>
+
+  <p class="fine" style="margin-top:28px">Aero Noir Academy is not affiliated with the FAA. Questions are original study material, not the actual exam. Progress is saved only in this browser.</p>
+</main>
+
+<script src="assets/config.js"></script>
+<script src="data/questions.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/study.js"></script>
+</body>
+</html>
